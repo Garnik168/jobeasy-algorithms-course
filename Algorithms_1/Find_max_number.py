@@ -11,5 +11,13 @@ def max_number_from_3_values(v1, v2, v3):
 print(f'The max number that you\'ve intered is: {max_number_from_3_values(value_1, value_2, value_3)}')
 
 
+def max_of_three(number_1, number_2, number_3):
+    max_item = number_1
+    if max_item < number_2:
+        max_item = number_3
+    if max_item < number_3:
+        max_item = number_3
+    return max_item
 
+print(max_of_three(23, 12, 55))
 

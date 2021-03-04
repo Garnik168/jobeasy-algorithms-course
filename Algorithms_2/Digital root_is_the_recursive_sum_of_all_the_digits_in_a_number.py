@@ -10,12 +10,12 @@
 
 number = int(input('Enter the number: '))
 
-def digital_root(number):
-    while number >= 10:
-        number = sum([int(n) for n in str(number)])
-    return number
-
-print(digital_root(number))
+# def digital_root(number):
+#     while number >= 10:
+#         number = sum([int(n) for n in str(number)])
+#     return number
+#
+# print(digital_root(number))
 
 # Ilya I got the solution above, but I've spent over 3 hours trying to figure out how to do it without function sum()
 # Please look a the code below, I really want to understand, why I'm getting infinite loop, there are several ways of
@@ -29,3 +29,16 @@ print(digital_root(number))
 #         number = result               # Here is the problem, even PyCharm is highlighting it, but I can't figure it out
 #     return number                   # Please explain, I guess I don't know enough of the while loops
 #                                  # Shouldn't number be reassigned and then go through the loop again? what I'm missing?
+
+
+def digital_root(number):
+    while len(str(number)) > 1:
+        result = 0
+        for digit in str(number):
+            result += int(digit)
+        number = result
+    return number
+
+print(digital_root(number))
+
+

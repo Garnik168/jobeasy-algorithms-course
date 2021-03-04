@@ -12,6 +12,7 @@ def factorial(number):
         result *= item
     return result
 
+
 print(factorial(n))
 
 

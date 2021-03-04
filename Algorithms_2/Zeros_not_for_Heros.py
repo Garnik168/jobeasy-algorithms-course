@@ -11,12 +11,14 @@
 
 number = int(input('Enter your, number: '))
 
+
 def no_zeros_at_the_end(number):
     if number == 0:
         return f"Zero alone is fine, don't worry about it. Poor guy anyway"
     while number % 10 == 0:
         number //= 10
     return number
+
 
 print(no_zeros_at_the_end(number))
 

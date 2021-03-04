@@ -3,6 +3,7 @@
 
 n = int(input('Enter needed element of the Fibonacci sequence: '))
 
+
 def fibonacci(n):
     index = 3
     fib_1 = 1
@@ -19,6 +20,7 @@ def fibonacci(n):
         fib_1, fib_2 = fib_2, fib_1 + fib_2
         index += 1
     return result[-1]          # if you need the element as list just use this instead: return [result[-1]]
+
 
 # print(fibonacci(10))
 print(fibonacci(n))
