@@ -26,5 +26,6 @@ def fibonacci(n):
         index += 1
     return result
 
+
 print(fibonacci(10))
 print(fibonacci(101))
